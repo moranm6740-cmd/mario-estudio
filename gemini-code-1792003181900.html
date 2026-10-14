@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Morán - Fotografía Profesional</title>
+    <!-- Hoja de estilos externa -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- 1. HEADER Y NAVEGACIÓN -->
+    <header>
+        <div class="logo">Mario Morán</div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#video">Detrás de Cámara</a></li>
+                <li><a href="#resenas">Reseñas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 2. SECCIÓN HERO (CON BACKGROUND DEGRADADO E IMAGEN) -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h1>Mario Morán | Fotografía</h1>
+                <p>Capturando la esencia de cada momento a través de una mirada artística, auténtica e inolvidable.</p>
+                <a href="#portfolio" class="btn">Explorar Trabajo</a>
+            </div>
+        </section>
+
+        <!-- 3. SECCIÓN PORTFOLIO (GALERÍA FOTOGRÁFICA) -->
+        <section id="portfolio" class="section-container">
+            <h2 class="section-title">Portfolio Destacado</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80" alt="Retrato fotográfico">
+                    <div class="overlay"><span>Retratos</span></div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" alt="Fotografía de boda">
+                    <div class="overlay"><span>Bodas</span></div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=800&q=80" alt="Fotografía de moda">
+                    <div class="overlay"><span>Editorial</span></div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Paisaje natural">
+                    <div class="overlay"><span>Naturaleza</span></div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=80" alt="Evento social">
+                    <div class="overlay"><span>Eventos</span></div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80" alt="Fotografía de producto">
+                    <div class="overlay"><span>Comercial</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. SECCIÓN SERVICIOS (ORGANIZADA CON FLEXBOX) -->
+        <section id="servicios" class="section-container">
+            <h2 class="section-title">Servicios Fotográficos</h2>
+            <div class="services-container">
+                <div class="service-card">
+                    <h3>Sesiones de Retrato</h3>
+                    <p>Capturamos tu personalidad en estudio o locación exterior con iluminación profesional.</p>
+                    <span class="price">Desde $150 USD</span>
+                </div>
+                <div class="service-card">
+                    <h3>Cobertura de Bodas</h3>
+                    <p>Documentamos cada detalle y emoción de tu día especial de principio a fin.</p>
+                    <span class="price">Desde $800 USD</span>
+                </div>
+                <div class="service-card">
+                    <h3>Fotografía Editorial</h3>
+                    <p>Producción visual creativa para marcas de moda, revistas y campañas comerciales.</p>
+                    <span class="price">Desde $400 USD</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. MULTIMEDIA (DETRÁS DE CÁMARAS) -->
+        <section id="video" class="multimedia-section">
+            <h2 class="section-title">Detrás de Cámara</h2>
+            <p>Conoce el proceso creativo y la dedicación puesta en cada sesión fotográfica.</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube-nocookie.com/embed/v9qR9d31-4k" title="Detrás de Cámara - Mario Morán" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- 6. SECCIÓN RESEÑAS (ORGANIZADA CON CSS GRID) -->
+        <section id="resenas" class="section-container">
+            <h2 class="section-title">Testimonios de Clientes</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <p>"Mario logró capturar la esencia de nuestra boda de una manera increíble. Las fotos transmiten la misma emoción que sentimos ese día."</p>
+                    <h4>— Camila & Tomás</h4>
+                </div>
+                <div class="review-card">
+                    <p>"Súper profesional y con un ojo artístico excepcional. La sesión de retratos para mi marca personal superó todas mis expectativas."</p>
+                    <h4>— Valeria Rossi</h4>
+                </div>
+                <div class="review-card">
+                    <p>"Atención al detalle inigualable. El equipo técnico y la dirección durante la sesión nos hicieron sentir muy cómodos."</p>
+                    <h4>— Javier Gómez</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. SECCIÓN CONTACTO (FORMULARIO FORMSPREE) -->
+        <section id="contacto" class="section-container">
+            <div class="contact-box">
+                <h2 class="section-title" style="margin-bottom: 1rem;">Reserva tu Sesión</h2>
+                <form action="https://formspree.io/f/tu-id-de-formulario" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nombre Completo</label>
+                        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="tu.correo@ejemplo.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Servicio de Interés</label>
+                        <select id="service" name="service" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="Retratos">Sesión de Retratos</option>
+                            <option value="Bodas">Cobertura de Bodas</option>
+                            <option value="Editorial">Fotografía Editorial</option>
+                            <option value="Otro">Otro consulta</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Cuéntame sobre tu evento o idea..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-submit">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- 8. FOOTER -->
+    <footer>
+        <p>&copy; 2026 Mario Morán Fotografía. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
