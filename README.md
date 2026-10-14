@@ -11,4 +11,4 @@ Página web institucional y portafolio interactivo para el estudio de fotografí
 - **CSS Grid:** Utilizado en el portfolio fotográfico y en la sección de reseñas de clientes.
 - **Multimedia:** Galería de imágenes en alta definición e integración de video en embebido sobre el proceso creativo.
 - **Formulario de Contacto:** Integración funcional con el servicio Formspree.
-- **Diseño Responsivo:** Adaptado para teléfonos móviles, tablets y monitores de escritorio mediante Medi 
+- **Diseño Responsivo:** Adaptado para teléfonos móviles, tablets y monitores de escritorio mediante Medi
