@@ -41,5 +41,40 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <div id="lightbox" class="lightbox">
+        <span class="cerrar-lightbox">&times;</span>
+        <img id="imagen-ampliada" src="" alt="Vista ampliada">
+    </div>
+
+    <script>
+        const lightbox = document.getElementById('lightbox');
+        const imagenAmpliada = document.getElementById('imagen-ampliada');
+        const cerrarBtn = document.querySelector('.cerrar-lightbox');
+
+        document.querySelectorAll('.portfolio-item img').forEach(img => {
+            img.addEventListener('click', () => {
+                imagenAmpliada.src = img.src;
+                lightbox.classList.add('activo');
+            });
+        });
+
+        cerrarBtn.addEventListener('click', () => {
+            lightbox.classList.remove('activo');
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target !== imagenAmpliada) {
+                lightbox.classList.remove('activo');
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                lightbox.classList.remove('activo');
+            }
+        });
+    </script>
+    
 </body>
 </html>
