@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Mario Morán Fotografía</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="portfolio">
+
+    <!-- 1. HEADER Y NAVEGACIÓN -->
+    <header>
+        <div class="logo">Mario Morán</div>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="promociones.html">Promociones</a></li>
+                <li><a href="index.html#servicios">Servicios</a></li>
+                <li><a href="index.html#video">Detrás de Cámara</a></li>
+                <li><a href="index.html#resenas">Reseñas</a></li>
+                <li><a href="promociones.html#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- GALERÍA GENERADA DINÁMICAMENTE DESDE ARREGLO DE OBJETOS (30 FOTOS: 5 POR TEMÁTICA) -->
+        <section id="portfolio" class="section-container page-top-offset">
+            <h1 class="section-title">Portfolio Destacado</h1>
+            <p class="promo-subtitle">6 temáticas con 5 fotografías cada una (30 imágenes en total).</p>
+
+            <div id="filter-buttons" class="filter-buttons" role="tablist" aria-label="Filtrar galería por temática"></div>
+            <div id="portfolio-grid" class="portfolio-grid"></div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Mario Morán Fotografía. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

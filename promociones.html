@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promociones y Contacto - Mario Morán Fotografía</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="promociones">
+
+    <!-- 1. HEADER Y NAVEGACIÓN -->
+    <header>
+        <div class="logo">Mario Morán</div>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="promociones.html" class="active">Promociones</a></li>
+                <li><a href="index.html#servicios">Servicios</a></li>
+                <li><a href="index.html#video">Detrás de Cámara</a></li>
+                <li><a href="index.html#resenas">Reseñas</a></li>
+                <li><a href="promociones.html#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- PROMOCIONES + CARRITO DE COMPRAS (VÁLIDO HASTA 31-12-26) -->
+        <section id="promociones" class="section-container page-top-offset">
+            <h1 class="section-title">Promociones Vigentes hasta 31-12-26</h1>
+            <p class="promo-subtitle">Aprovechá estas promos especiales y armá tu pedido en el carrito.</p>
+
+            <div class="promo-layout">
+                <div id="promo-cards" class="promo-cards"></div>
+
+                <!-- CARRITO DE COMPRAS -->
+                <aside class="cart-box" aria-label="Carrito de compras">
+                    <h3>Carrito de Promociones</h3>
+                    <p class="cart-validity">Promoción válida hasta el 31-12-2026</p>
+                    <div id="cart-items" class="cart-items">
+                        <p class="cart-empty">Todavía no agregaste promociones.</p>
+                    </div>
+                    <div class="cart-summary">
+                        <div class="cart-total-row">
+                            <span>Total:</span>
+                            <strong id="cart-total">USD 0</strong>
+                        </div>
+                        <button type="button" id="checkout-btn" class="btn btn-submit" disabled>
+                            Reservar selección en Contacto
+                        </button>
+                        <button type="button" id="clear-cart-btn" class="btn-secondary">
+                            Vaciar carrito
+                        </button>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- FORMULARIO DE CONTACTO -->
+        <section id="contacto" class="section-container">
+            <div class="contact-box">
+                <h2 class="section-title" style="margin-bottom: 1rem;">Reserva tu Sesión</h2>
+                <form action="https://formspree.io/f/tu-id-de-formulario" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nombre Completo</label>
+                        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="tu.correo@ejemplo.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Servicio de Interés</label>
+                        <select id="service" name="service" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="Promocion hasta 31-12-26">Promoción (hasta 31-12-26)</option>
+                            <option value="Retratos">Sesión de Retratos</option>
+                            <option value="Bodas">Cobertura de Bodas</option>
+                            <option value="Eventos">Eventos</option>
+                            <option value="Editorial">Fotografía Editorial</option>
+                            <option value="Quinceaneras">Quinceañeras</option>
+                            <option value="Producto">Fotografía de Producto</option>
+                            <option value="Otro">Otra consulta</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Cuéntame sobre tu evento o idea..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-submit">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Mario Morán Fotografía. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
