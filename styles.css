@@ -197,6 +197,11 @@ nav ul li a:hover {
     transition: transform 0.5s ease;
 }
 
+.portfolio-item[data-category="retratos"] img,
+.portfolio-item[data-category="bodas"] img {
+    object-position: center 12%;
+}
+
 .portfolio-item:hover img {
     transform: scale(1.08);
 }
