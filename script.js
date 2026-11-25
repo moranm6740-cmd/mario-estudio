@@ -73,7 +73,7 @@ const PROMOS_DATA = [
         badge: 'Hasta 31-12-26',
         title: 'Book con 15 fotos editadas',
         description: 'Sesión fotográfica con 15 imágenes retocadas y editadas en alta calidad.',
-        price: 20,
+        price: 65,
         cartName: 'Book con 15 fotos editadas (Promo hasta 31-12-26)'
     },
     {
@@ -81,7 +81,7 @@ const PROMOS_DATA = [
         badge: 'Hasta 31-12-26',
         title: 'Cumpleaños infantil (3 hrs) foto y video',
         description: 'Cobertura completa de 3 horas incluyendo fotografía y registro en video.',
-        price: 55,
+        price: 375,
         cartName: 'Cumpleaños infantil (3 hrs) foto y video (Promo hasta 31-12-26)'
     },
     {
@@ -89,7 +89,7 @@ const PROMOS_DATA = [
         badge: 'Hasta 31-12-26',
         title: 'Fiesta de egresados (3 hrs) foto y video',
         description: 'Cobertura de 3 horas para egresados con fotografía y video del evento.',
-        price: 50,
+        price: 450,
         cartName: 'Fiesta de egresados (3 hrs) foto y video (Promo hasta 31-12-26)'
     }
 ];
