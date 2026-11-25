@@ -1,14 +1,12 @@
-Markdown
 # Mario Morán - Sitio Web de Fotografía Profesional
 
-## Propósito del Proyecto
-Página web institucional y portafolio interactivo para el estudio de fotografía **Mario Morán**. Diseñado con una estética oscura, elegante y minimalista que resalta el trabajo fotográfico y facilita el contacto directo con potenciales clientes.
+Sitio web multipágina para el estudio de fotografía **Mario Morán**, desplegado con **GitHub Pages**.
 
-## Características Técnicas
-- **Estructura Semántica HTML5:** Uso de etiquetas `<header>`, `<nav>`, `<main>`, `<section>` y `<footer>`.
-- **Hojas de Estilo Externa (CSS):** Implementación de tipografías de Google Fonts (*Cinzel* y *Montserrat*), paleta de colores con variables CSS y degradados de fondo.
-- **Flexbox:** Aplicado en la organización responsiva de la sección de servicios fotográficos.
-- **CSS Grid:** Utilizado en el portfolio fotográfico y en la sección de reseñas de clientes.
-- **Multimedia:** Galería de imágenes en alta definición e integración de video en embebido sobre el proceso creativo.
-- **Formulario de Contacto:** Integración funcional con el servicio Formspree.
-- **Diseño Responsivo:** Adaptado para teléfonos móviles, tablets y monitores de escritorio mediante Medi
+## Estructura del Proyecto
+- `index.html`: Página principal con presentación (Hero), servicios, video detrás de cámara (`multimedia/detras-de-escena.mp4`) y reseñas de clientes.
+- `portfolio.html`: Galería filtrable de **30 fotografías** (5 fotos por cada una de las 6 temáticas: *Retratos*, *Bodas*, *Eventos*, *Editorial*, *Quinceañeras* y *Producto*).
+- `promociones.html`: Promociones vigentes hasta el **31-12-26** (*Book con 15 fotos editadas* USD 20, *Cumpleaños infantil 3 hrs foto y video* USD 55, *Fiesta de egresados 3 hrs foto y video* USD 50), carrito interactivo y formulario de contacto.
+- `styles.css`: Estilos responsivos con Flexbox, CSS Grid, `@media` queries y ajustes de encuadre (`object-fit` / `object-position`).
+- `script.js`: Renderizado dinámico desde arreglos de objetos, filtros de galería, manejo de eventos del DOM y persistencia del carrito en `localStorage`.
+- `imagenes/`: Carpeta con las 30 imágenes de la galería.
+- `multimedia/`: Carpeta con el video `detras-de-escena.mp4`.
