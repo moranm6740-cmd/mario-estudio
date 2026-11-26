@@ -43,7 +43,7 @@
     <script src="script.js"></script>
 
     <div id="lightbox" class="lightbox">
-        <span class="cerrar-lightbox">&times;</span>
+        <span class="cerrar-lightbox" aria-label="Cerrar">&times;</span>
         <img id="imagen-ampliada" src="" alt="Vista ampliada">
     </div>
 
@@ -51,13 +51,19 @@
         const lightbox = document.getElementById('lightbox');
         const imagenAmpliada = document.getElementById('imagen-ampliada');
         const cerrarBtn = document.querySelector('.cerrar-lightbox');
+        const portfolioGrid = document.getElementById('portfolio-grid');
 
-        document.querySelectorAll('.portfolio-item img').forEach(img => {
-            img.addEventListener('click', () => {
+        if (portfolioGrid) {
+            portfolioGrid.addEventListener('click', (e) => {
+                const item = e.target.closest('.portfolio-item');
+                if (!item) return;
+                const img = item.querySelector('img');
+                if (!img) return;
                 imagenAmpliada.src = img.src;
+                imagenAmpliada.alt = img.alt || 'Vista ampliada';
                 lightbox.classList.add('activo');
             });
-        });
+        }
 
         cerrarBtn.addEventListener('click', () => {
             lightbox.classList.remove('activo');
@@ -75,6 +81,6 @@
             }
         });
     </script>
-    
+
 </body>
 </html>
